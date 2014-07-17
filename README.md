@@ -7,7 +7,7 @@ This script is super easy to setup and use.
 
 First, add the script to your document like this:
   
-`<script src="urlparameter.js"></script>'
+`<script src="urlparameter.js"></script>`
 
 Next, you simply use the `GetURLParameter()` passing in the parameter name as a string.
 
