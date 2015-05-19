@@ -3,8 +3,6 @@ Url Parameter Tool
 
 A simple js plugin that lets you pull url parameter content into your script.
 
-This script is super easy to setup and use. 
-
 First, add the script to your document like this:
   
 `<script src="urlparameter.js"></script>`
@@ -27,5 +25,12 @@ i.e. http://www.example.com?id=5&name=Max
 `var name = GetURLParameter('name');`
 
 would also work.
+You can also create your parameter object without passing a specific parameter. This will return an object with all of the url parameter items.
+
+i.e. http://www.example.com?id=5&name=max
+
+`var results = GetURLParameter();`
+will return
+`results = {id: '5',name: 'max'}`
 
 
