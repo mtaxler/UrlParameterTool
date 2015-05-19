@@ -1,4 +1,4 @@
-Url Parameter Tool
+URL Parameter Tool
 ================
 
 A simple js plugin that lets you pull url parameter content into your script.
@@ -33,6 +33,6 @@ i.e. http://www.example.com?id=5&name=max
 
 will return
 
-`results = {id: '5',name: 'max'}`
+`results = {id: '5', name: 'max'}`
 
 
