@@ -1,5 +1,4 @@
 function GetURLParameter(urlParameter){
-
 	var url = window.location.search.substring(1);
 	var urlVariables = url.split('&');
 	if (urlVariables[0].length > 0){

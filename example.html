@@ -1,31 +1,27 @@
 <html>
-	<head>
-		<title>Url Parameters</title>
-		<script type="text/javascript" src="urlparameter.js"></script>
-	</head>
-	<body>
-		<div id="main"></div>
-		<script type="text/javascript">
+  <head>
+    <title>Url Parameters</title>
+    <script type="text/javascript" src="urlparameter.js"></script>
+  </head>
+  <body>
+  	<div id="main"></div>
+  	<script type="text/javascript">
 
-			var id = GetURLParameter('id');
-			var noParameter = GetURLParameter();
+  		var id = GetURLParameter('id');
+  		var noParameter = GetURLParameter();
 
-			if (id){
-				document.getElementById('main').innerHTML = '<h4>Supplying parameter name as input</h4> <p>ID is: ' + id + '</p>';
-			}
-
-
-			if (noParameter){
-				var html = '<h4>No parameter name as input</h4><p>Returns all keys and values as an object</p>';
-				for (var key in noParameter) {
-					if (noParameter.hasOwnProperty(key)) {
-				    	html += '<p> ' + key + ' is ' + noParameter[key] + '</p>';
-				  	}
-				}
-				document.getElementById('main').insertAdjacentHTML('beforeend', html);
-			}
-
-
-		</script>
-	</body>
+  		if (id){
+  			document.getElementById('main').innerHTML = '<h4>Supplying parameter name as input</h4> <p>ID is: ' + id + '</p>';
+  		}
+  		if (noParameter){
+  			var html = '<h4>No parameter name as input</h4><p>Returns all keys and values as an object</p>';
+  			for (var key in noParameter) {
+  				if (noParameter.hasOwnProperty(key)) {
+  					html += '<p> ' + key + ' is ' + noParameter[key] + '</p>';
+  				}
+  			}
+  			document.getElementById('main').insertAdjacentHTML('beforeend', html);
+  		}
+  	</script>
+  </body>
 </html>
