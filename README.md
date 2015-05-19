@@ -30,6 +30,7 @@ You can also create your parameter object without passing a specific parameter. 
 i.e. http://www.example.com?id=5&name=max
 
 `var results = GetURLParameter();`
+
 will return
 
 `results = {id: '5',name: 'max'}`
